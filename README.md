@@ -42,14 +42,6 @@ To see the data visualization:
     
 
 
-/repository-name
-├── index.html          # Main HTML file
-├── js
-│   └── main.js        # JavaScript file for data visualization
-├── data
-│   ├── females_data.csv  # CSV file containing female employment data
-│   └── males_data.csv    # CSV file containing male employment data
-└── README.md          # Project documentation
 
 
 Data Sources
