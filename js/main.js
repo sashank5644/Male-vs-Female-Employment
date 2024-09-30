@@ -1,13 +1,12 @@
-// Hint: This is a great place to declare your global variables
 var female_data;
 var male_data;
 var svg;
 var innerWidth;
 var innerHeight;
 var margin;
-// This function is called once the HTML page is fully loaded by the browser
+
 document.addEventListener('DOMContentLoaded', function () {
-   // Hint: create or set your svg element inside this function
+   
     svg = d3.select('#llpChart');
     const width = +svg.style('width').replace('px', '')
     const height = +svg.style('height').replace('px','')
@@ -15,14 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
     margin = { top:60, bottom:60, right:60, left: 60 };
     innerWidth = width - margin.left - margin.right;
     innerHeight = height - margin.top - margin.bottom;
-   // This will load your CSV files and store them into two arrays.
+   
    Promise.all([d3.csv('data/females_data.csv'),d3.csv('data/males_data.csv')]).then(function (values) {
             console.log('Loaded the females_data.csv and males_data.csv');
             female_data = values[0];
             male_data = values[1];
-            //console.log(female_data)
-        
-            // Hint: This is a good spot for data wrangling
+
+      
             female_data.forEach(d => {
                 d.Argentina = +d['Argentina'];
                 d.us = +d['United States'];
@@ -52,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
      console.log('Works')
 });
 
-// Use this function to draw the lollipop chart.
+
 function drawLolliPopChart(selectedCountry) {
     console.log('trace:drawLolliPopChart()');
     svg.selectAll('*').remove();
