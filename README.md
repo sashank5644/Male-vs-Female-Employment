@@ -1,46 +1,61 @@
-# Male-vs-Female-Employment
-
+# Male vs Female Employment Rate
 
 Overview
 
-This data visualization project illustrates a lollipop chart to compare male and female employment rate in Argentina, United States, Brazil, Canada, New Zealand.
+This data visualization project visualizes the employment rates of males and females in various countries over time using a lollipop chart. It employs D3.js for data visualization and Bootstrap for responsive design.
+
 
 Features
 
-Fetches ETF data from Financial Modeling Prep API.
-Visualizes ETF price trends using Plotly.js.
-Displays a line chart with markers for each ETF symbol and price.
+Interactive dropdown menu to select different countries.
+Dynamic lollipop chart displaying employment rates for both genders.
+Clear labeling and legends for easy interpretation.
 
 
-Prerequisites
+Technologies Used
+HTML5
+CSS3
+JavaScript
+D3.js (version 7)
+Bootstrap (version 5.2)
 
-Node.js (v14 or later)
-npm (v6 or later) or yarn (v1 or later)
+
+Getting Started
+To run this project locally:
 
 
-Installation and Setup
-
-Create new react project
-
-    npx create-react-app stmarket
-
-Clone git repository
-
-    git clone https://github.com/your-username/your-repo.git
-
-    cd your-repo
-
-    npm install
-    or
-    yarn install
-
-    npm install react-plotly.js plotly.js
-    or
-    yarn add react-plotly.js plotly.js
+Clone the repository:
+    
+    git clone https://github.com/yourusername/repository-name.git
 
 
 
-API
+Open the directory with the repository, and run terminal command:
+    
+    python -m http:server
 
-Head over to Financial Modeling Prep ("https://intelligence.financialmodelingprep.com/pricing-plans?couponCode=coinmonks&utm_campaign=coinmonks24&utm_medium=medium&utm_source=medium") website to create an API key for free.
-Add your API key in Stock.js file "YOUR API KEY HERE"
+
+
+To see the data visualization:
+    
+    http://localhost:8000/
+    
+
+
+/repository-name
+├── index.html          # Main HTML file
+├── js
+│   └── main.js        # JavaScript file for data visualization
+├── data
+│   ├── females_data.csv  # CSV file containing female employment data
+│   └── males_data.csv    # CSV file containing male employment data
+└── README.md          # Project documentation
+
+
+Data Sources
+The data for employment rates is stored in two CSV files: females_data.csv and males_data.csv. These files contain employment statistics by year for several countries.
+
+Usage
+Open the dropdown menu to select a country.
+The lollipop chart will update to display the employment rates for both males and females over time.
+ 
