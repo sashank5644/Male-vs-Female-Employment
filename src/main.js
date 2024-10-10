@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     innerWidth = width - margin.left - margin.right;
     innerHeight = height - margin.top - margin.bottom;
    
-   Promise.all([d3.csv('data/females_data.csv'),d3.csv('data/males_data.csv')]).then(function (values) {
+   Promise.all([d3.csv('../data/females_data.csv'),d3.csv('../data/males_data.csv')]).then(function (values) {
             console.log('Loaded the females_data.csv and males_data.csv');
             female_data = values[0];
             male_data = values[1];
